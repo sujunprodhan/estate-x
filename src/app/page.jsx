@@ -1,9 +1,12 @@
-import Image from "next/image";
+import HeroBanner from '@/components/pages/HeroBanner';
+import Product from '@/components/pages/Product';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 dark:bg-black">
-   
+      <HeroBanner></HeroBanner>
+      <Product></Product>
     </div>
   );
 }

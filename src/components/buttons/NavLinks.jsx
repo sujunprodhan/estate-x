@@ -14,7 +14,7 @@ const NavLinks = ({ children, href }) => {
         isActive 
           ? "text-amber-500 font-bold" 
           : "hover:text-amber-500 hover:bg-amber-50 dark:hover:bg-slate-800"
-      } rounded-lg p-3`} 
+      } rounded-lg p-2`} 
       href={href}
     >
       {children}
