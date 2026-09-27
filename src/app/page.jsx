@@ -1,5 +1,5 @@
 import HeroBanner from '@/components/pages/HeroBanner';
-import Product from '@/components/pages/Product';
+import Product from '@/components/pages/Property';
 import Image from 'next/image';
 
 export default function Home() {

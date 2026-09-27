@@ -1,11 +1,11 @@
-import { MongoClient } from 'mongodb';
+import { MongoClient, ServerApiVersion } from 'mongodb';
 
 const uri = process.env.MONGODB_URI;
 const dbName = process.env.MONGODB_NAME;
-const collections ={
-  PRODUCTS:"products"
-}
-  
+
+const collection = {
+  PROPERTIES: 'properties',
+};
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -15,7 +15,8 @@ const client = new MongoClient(uri, {
   },
 });
 
+export const dbConnect = (cname) => {
+  return client.db(dbName).collection(cname);
+};
 
-export const dbConnect =(cname)=>{
-  return client.db(dbName).collections(cname)
-}
+export { collection };
