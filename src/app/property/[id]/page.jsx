@@ -46,8 +46,6 @@ const PropertyDetails = async ({ params }) => {
     (p) => p.category === category && p._id !== property._id
   );
 
-
-
   relatedProperties = relatedProperties.slice(0, 3);
 
   return (

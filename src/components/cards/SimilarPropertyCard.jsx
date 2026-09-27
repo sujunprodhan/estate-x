@@ -46,18 +46,14 @@ const SimilarPropertyCard = ({ property }) => {
           className=" object-cover group-hover:scale-110 transition-transform duration-700"
         />
 
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-black/60 to-transparent pointer-events-none" />
       </div>
-
-      {/* Content Container */}
       <div className="p-6">
         <h3 className="text-xl font-extrabold text-slate-900 mb-2 truncate">{title}</h3>
         <div className="flex items-baseline mb-6">
           <span className="text-3xl font-extrabold text-[#6345ed]">{formattedPrice}</span>
           {isRent && <span className="text-slate-400 ml-1 font-medium">/mo</span>}
         </div>
-
-        {/* Stats Grid */}
         <div className="flex items-center justify-between py-4 bg-slate-50/50 rounded-2xl">
           <div className="flex flex-col items-center justify-center flex-1">
             <BedDouble size={20} className="text-slate-400 mb-2" />

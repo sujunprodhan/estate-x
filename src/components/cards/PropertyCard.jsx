@@ -48,7 +48,6 @@ const PropertyCard = ({ property }) => {
         <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
       </div>
 
-      {/* Content Section */}
       <div className="p-6 flex flex-col grow">
         <div className="flex justify-between items-start gap-4 mb-2">
           <h3 className="text-xl font-bold text-slate-900 dark:text-white line-clamp-1 cursor-pointer hover:text-amber-500 transition-colors">
@@ -62,7 +61,6 @@ const PropertyCard = ({ property }) => {
         </div>
 
         <div className="mt-auto">
-          {/* Stats Grid */}
           <div className="grid grid-cols-3 gap-4 py-4 border-y border-slate-100 dark:border-slate-700">
             <div className="flex flex-col items-center justify-center gap-1">
               <div className="flex items-center text-slate-400">
@@ -90,7 +88,6 @@ const PropertyCard = ({ property }) => {
             </div>
           </div>
 
-          {/* Footer (Price & Action) */}
           <div className="flex items-center justify-between pt-5">
             <div>
               <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold uppercase tracking-wider mb-1">
